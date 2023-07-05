@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calendar{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: grey 1px solid;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.calendar .month{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+.calendar .month button{
+    background: none;
+    border: none;
+    line-height: 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+.calendar .current-month{
+    height: fit-content;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: 600;
+}
+.calendar .month button:hover{
+    background-color: #e3e3e3;
+}
+.calendar .month button img{
+    max-width: 16px;
+}
+.calendar .month button:first-child img{
+    transform: rotate(180deg);
+}
+.calendar table{
+    width: 100%;
+    border-collapse: collapse;
+}
+/*table thead tr{*/
+/*    border-bottom: 1px solid #000000;*/
+/*}*/
+.calendar  thead th{
+    border-bottom: #1f1f1f 1px solid;
+    font-family: "Helvetica Neue",sans-serif;
+    color: #d4b215;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.calendar thead tr:last-child{
+    height: 10px;
+
+}
+.calendar .week td{
+    width: fit-content;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Helvetica Neue",sans-serif;
+}
+.calendar .week td:last-child{
+    border-radius: 0 5px 5px  0;
+}
+.calendar .week td:first-child{
+    border-radius:  5px 0 0 5px;
+}
